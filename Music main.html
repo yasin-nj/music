@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>دانلود و پخش آهنگ — نمونه</title>
+  <style>
+    :root{--accent:#e33;--muted:#777;--card:#fff;--bg:#f4f6f8}
+    *{box-sizing:border-box;font-family:Tahoma,Arial,"Segoe UI",sans-serif}
+    body{margin:0;background:var(--bg);color:#111;padding:20px;}
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    header img{width:72px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+    h1{font-size:20px;margin:0}
+    .meta{color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(15,15,15,.04)}
+    .audio-player{display:flex;flex-direction:column;gap:12px}
+    .download-list{display:flex;gap:8px;flex-wrap:wrap;flex-direction:column}
+    .rating{display:flex;gap:6px;align-items:center}
+    .star{font-size:20px;cursor:pointer;opacity:.45}
+    .star.active{color:gold;opacity:1}
+    .comments{margin-top:12px}
+    .comment{border-top:1px solid #f1f1f1;padding:10px 0;font-size:14px}
+    .sidebar-list li{margin-bottom:10px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    input,textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:14px}
+    .row{display:flex;gap:8px}
+    .row > *{flex:1}
+    .button{border-radius:20px;color: white;background-color: #111;max-width: 100px;text-align: center;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="C:\Users\yasin\OneDrive\تصاویر\space\5960578.jpg" alt="cover">
+      <div>
+        <h1 id="title">Analog Horror Funk — DJ Raulipues</h1>
+        <div class="meta">فانک • پخش و دانلود • امتیاز: <span id="avgRating">4.6</span> / 5</div>
+      </div>
+    </header>
+    <hr>
+    <div class="grid">
+      <main>
+        <div class="card">
+          <div class="audio-player">
+            <audio id="audio" controls preload="metadata" style="border-radius: 20px; border: 1px solid #ccc;">
+              <source id="srcMain" src="C:\Users\yasin\OneDrive\اسناد\html\music\audio\I LOVE YOU SO JUMPSTYLE (Ultra Slowed).m4a" type="audio/mpeg">
+              مرورگرتان از تگ audio پشتیبانی نمی‌کند.
+            </audio>
+            <div class="button"><a style="text-decoration: none; color: white;" href="C:\Users\yasin\OneDrive\اسناد\html\music\audio\I LOVE YOU SO JUMPSTYLE (Ultra Slowed).m4a"> دانلود </a>
+            </div>
+            <!-- بخش حجم فایل -->
+            <div style="margin-top:4px" class="small">حجم فایل: 5.2MB — کیفیت: 320kbps</div>
+            <!-- لینک‌ها تبدیل شدند به متن ساده + کد آهنگ -->
+            <div style="margin-top:12px" class="download-list small">
+              <div>🎧 نسخه اصلی — کد آهنگ: <code>AF001</code></div>
+               <div class="grid">
+      <main>
+        <div class="card">
+          <div class="audio-player">
+            <audio id="audio" controls preload="metadata">
+              <source id="srcMain" src="C:\Users\yasin\OneDrive\اسناد\html\music\audio\I LOVE YOU SO JUMPSTYLE (Ultra Slowed).m4a" type="audio/mpeg">
+              مرورگرتان از تگ audio پشتیبانی نمی‌کند.
+            </audio>
+            <div class="button"><a style="text-decoration: none; color: white;" href="C:\Users\yasin\OneDrive\اسناد\html\music\audio\I LOVE YOU SO JUMPSTYLE (Ultra Slowed).m4a"> دانلود </a>
+            </div>
+ <div style="margin-top:4px" class="small">حجم فایل: 5.2MB — کیفیت: 320kbps</div>
+              <div>🎧 نسخه Slowed — کد آهنگ: <code>AF002</code></div>
+               <div class="grid">
+      <main>
+        <div class="card">
+          <div class="audio-player">
+            <audio id="audio" controls preload="metadata">
+              <source id="srcMain" src="C:\Users\yasin\OneDrive\اسناد\html\music\audio\I LOVE YOU SO JUMPSTYLE (Ultra Slowed).m4a" type="audio/mpeg">
+              مرورگرتان از تگ audio پشتیبانی نمی‌کند.
+            </audio>
+            <div class="button"><a style="text-decoration: none; color: white;" href="C:\Users\yasin\OneDrive\اسناد\html\music\audio\I LOVE YOU SO JUMPSTYLE (Ultra Slowed).m4a"> دانلود </a>
+            </div>
+            <!-- بخش حجم فایل -->
+            <div style="margin-top:4px" class="small">حجم فایل: 5.2MB — کیفیت: 320kbps</div>
+
+              <div>🎧 نسخه Super Slowed — کد آهنگ: <code>AF003</code></div>
+            </div>
+
+            <!-- سیستم امتیازدهی -->
+            <div style="margin-top:12px" class="rating">
+              <div id="stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+              <div class="small" style="margin-right:10px">تعداد امتیاز: <span id="ratingCount">60</span></div>
+            </div>
+          </div>
+
+          <section style="margin-top:14px">
+            <h3 style="margin:0 0 8px 0">دربارهٔ آهنگ</h3>
+            <p class="small">این صفحه نمونه برای نمایش قابلیت پخش و توضیحات آهنگ است. متن معرفی آهنگ را می‌توانید این‌جا قرار دهید.</p>
+          </section>
+
+          <!-- 🔹 بخش جدید: آهنگ‌های دیگر برای سئو -->
+          <section style="margin-top:18px">
+            <h3 style="margin-bottom:8px">آهنگ‌های دیگر</h3>
+            <ul class="small" style="line-height:1.8">
+              <li><a href="#">MUNCHAUSEN FUNK — SEKIMANE</a></li>
+              <li><a href="#">LA MUSICA — QMIIR</a></li>
+              <li><a href="#">STEAL A BRAINROT — SHX4</a></li>
+              <li><a href="#">FUNK 67 — SHX4 & FYU</a></li>
+              <li><a href="#">ANALOG HORROR II — DJ Raulipues</a></li>
+            </ul>
+            <p class="small">در این بخش می‌توانید سایر آهنگ‌های مشابه یا مرتبط را معرفی کنید تا کاربران و موتورهای جستجو ارتباط موضوعی آهنگ‌ها را بهتر درک کنند.</p>
+          </section>
+
+          <section class="comments">
+            <h3 style="margin:8px 0">نظرات</h3>
+            <div id="commentsList"></div>
+
+            <form id="commentForm" onsubmit="return addComment();">
+              <div class="row" style="margin-top:8px">
+                <input id="name" placeholder="نام شما" required style="border-color: #777;">
+                <input id="email" placeholder="ایمیل (اختیاری)" style="border-color: #777;">
+              </div>
+              <textarea id="comment" rows="3" placeholder="نظر شما..." required style="border-color: #777; margin-top:8px"></textarea>
+              <div style="margin-top:8px;display:flex;gap:8px">
+                <button class="btn" type="submit">ثبت نظر</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin-top:0">آهنگ‌های پیشنهادی</h4>
+          <ul class="sidebar-list small" id="suggested">
+            <li><a href="#" onclick="loadSample('sample2.mp3');return false">67 FUNK — SHX4 & FYU</a></li>
+            <li><a href="#" onclick="loadSample('sample3.mp3');return false">LA MUSICA — QMIIR</a></li>
+            <li><a href="#" onclick="loadSample('sample4.mp3');return false">MUNCHAUSEN FUNK — SEKIMANE</a></li>
+            <li><a href="#" onclick="loadSample('sample5.mp3');return false">STEAL A BRAINROT — SHX4</a></li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px" class="card small">
+          <div>دسته‌ها</div>
+          <div style="margin-top:8px">
+            <a class="small" href="#">فانک</a> • <a class="small" href="#">آهنگ‌های خارجی</a> • <a class="small" href="#">ترند</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // سیستم امتیازدهی و نظرات همانند قبل
+    const stars = document.querySelectorAll('.star');
+    const ratingCountEl = document.getElementById('ratingCount');
+    const avgRatingEl = document.getElementById('avgRating');
+    let ratingCount = parseInt(localStorage.getItem('ratingCount')) || 74;
+    let totalScore = parseFloat(localStorage.getItem('totalScore')) || (4.6 * ratingCount);
+
+    function updateRatingDisplay() {
+      const avg = (totalScore / ratingCount) || 0;
+      avgRatingEl.textContent = avg.toFixed(1);
+      ratingCountEl.textContent = ratingCount;
+      stars.forEach(s=>{
+        s.classList.toggle('active', Number(s.dataset.value) <= Math.round(avg));
+      });
+    }
+    updateRatingDisplay();
+
+    stars.forEach(s=>{
+      s.addEventListener('click', ()=>{
+        const v = Number(s.dataset.value);
+        ratingCount += 1;
+        totalScore += v;
+        localStorage.setItem('ratingCount', ratingCount);
+        localStorage.setItem('totalScore', totalScore);
+        updateRatingDisplay();
+        alert('امتیاز شما ثبت شد: ' + v);
+      });
+    });
+
+    function renderComments(){
+      const list = JSON.parse(localStorage.getItem('demo_comments') || '[]').reverse();
+      const wrap = document.getElementById('commentsList');
+      wrap.innerHTML = list.map(c=>`
+        <div class="comment"><strong>${escapeHtml(c.name)}</strong> <div class="small">${escapeHtml(c.date)}</div>
+        <div style="margin-top:6px">${escapeHtml(c.text)}</div></div>
+      `).join('');
+      if(list.length===0) wrap.innerHTML = '<div class="small">هنوز نظری ثبت نشده.</div>';
+    }
+    function addComment(){
+      const name = document.getElementById('name').value.trim();
+      const text = document.getElementById('comment').value.trim();
+      if(!name||!text) return false;
+      const arr = JSON.parse(localStorage.getItem('demo_comments') || '[]');
+      arr.push({name, text, date: new Date().toLocaleString('fa-IR')});
+      localStorage.setItem('demo_comments', JSON.stringify(arr));
+      document.getElementById('commentForm').reset();
+      renderComments();
+      return false;
+    }
+    function clearComments(){
+      if(confirm('آیا مطمئنی؟ (تنها برای دمو)')){
+        localStorage.removeItem('demo_comments');
+        renderComments();
+      }
+    }
+    function escapeHtml(s){ return (s+'').replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[c]); }
+    renderComments();
+
+    function loadSample(src){
+      const a = document.getElementById('audio');
+      document.getElementById('srcMain').src = src;
+      a.load();
+      a.play();
+      document.getElementById('title').textContent = src.replace(/[-_.0-9]/g,' ').slice(0,40);
+    }
+  </script>
+</body>
+</html>
